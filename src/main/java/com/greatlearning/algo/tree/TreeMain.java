@@ -12,7 +12,7 @@ public class TreeMain {
 //        System.out.println("Traverse using the inorder");
 //        inOrder_Traversal(root);
         int[] elements = {10, 5, 10, 2, 12, 30};
-        createBinarySearhTree(elements);
+        Node root = createBinarySearhTree(elements);
         System.out.println("Traverse using the inorder");
         inOrder_Traversal(root);
         System.out.println("Traverse using the preorder");
