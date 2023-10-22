@@ -11,11 +11,11 @@ public class TreeMain {
 //        preOrder_Traversal(root);
 //        System.out.println("Traverse using the inorder");
 //        inOrder_Traversal(root);
-        int[] elements = {10, 5, 10, 2, 12, 30};
+        int[] elements = {10, 5, 15, 2, 12, 30};
         Node root = createBinarySearhTree(elements);
         System.out.println("Traverse using the inorder");
         inOrder_Traversal(root);
-        System.out.println("Traverse using the preorder");
+        System.out.println("\nTraverse using the preorder");
         preOrder_Traversal(root);
 
     }
@@ -42,12 +42,7 @@ public class TreeMain {
 
     public static Node createBinarySearhTree(int[] elements) {
         Node root = null;
-        Scanner choice = new Scanner(System.in);
-        //char ch = 'y';
-        System.out.println("Enter the choice(y/n): ");
-
         int index = 0;
-
         while (index < elements.length) {
             System.out.println("Enter the Node Value: " + elements[index]);
             Node temp = new Node(elements[index]);
