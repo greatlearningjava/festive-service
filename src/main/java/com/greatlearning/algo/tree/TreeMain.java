@@ -20,7 +20,7 @@ public class TreeMain {
 
     }
 
-    private static void inOrder_Traversal(Node root) {
+    public static void inOrder_Traversal(Node root) {
         if (root == null) {
             return;
         }
@@ -30,7 +30,7 @@ public class TreeMain {
 
     }
 
-    private static void preOrder_Traversal(Node root) {
+    public static void preOrder_Traversal(Node root) {
         if (root == null) {
             return;
         }
