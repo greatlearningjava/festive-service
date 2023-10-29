@@ -3,7 +3,7 @@ package com.greatlearning.algo.tree;
 import java.util.LinkedList;
 import java.util.Queue;
 
-public class LevelOrderTraversal {
+public class FloorValueInBST {
 
     public static void main(String[] args) {
 
