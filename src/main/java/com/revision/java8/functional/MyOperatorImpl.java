@@ -4,7 +4,6 @@ public class MyOperatorImpl implements com.revision.java8.functional.MyOperator2
 
     @Override
     public int operation(int a, int b) {
-
         return a + b;
     }
 }
