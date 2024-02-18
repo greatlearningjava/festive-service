@@ -47,6 +47,16 @@ public class FindAverageSalaryApp {
         Map<String, Map<String, Double>> avgSalByLocAndDesignation = employees.parallelStream()
                 .collect(Collectors.groupingBy(Employee::getOfficeLocation, Collectors.groupingBy(Employee::getDesignation, Collectors.averagingDouble(Employee::getSalary))));
 
+        Map<String, Map<String, Double>> avg
+        = employees.parallelStream().collect(Collectors.groupingBy(Employee::getOfficeLocation, Collectors.groupingBy(Employee::getDesignation, Collectors.averagingDouble(Employee::getSalary))));
+
+        avg.forEach((loc, desigMap) -> {
+            System.out.println(loc);
+            desigMap.forEach((desig , avgSal) -> {
+                System.out.println(desig + ", avg sal=" + avgSal);
+            });
+        });
+
         avgSalByLocAndDesignation.forEach((office, designantionMap) -> {
             System.out.println(office);
             designantionMap.forEach((designantion, averageSalary) -> {
