@@ -8,7 +8,5 @@ public class NumberStartingWithOne {
         List<Integer> myList = Arrays.asList(10,15,8,49,25,98,32, 19);
         myList.parallelStream().map(String::valueOf).filter(e -> e.startsWith("1"))
                 .forEach(System.out::println);
-
-
     }
 }
