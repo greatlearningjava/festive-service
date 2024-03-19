@@ -1,9 +1,9 @@
 package com.greatlearning.algo.linkededlist;
 
 public class Node {
-    int num;
-    Node ptr;
-    Node(int num){
+    public int num;
+    public Node ptr;
+    public Node(int num){
         this.num = num;
     }
 }

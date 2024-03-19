@@ -13,7 +13,17 @@ public class ReverseLinkedList {
         int k = scanner.nextInt();
         Node temp = first;
         Node previous = first;
+
         while(temp != null){
+            if(first == temp && temp  == previous){
+                if(temp.num > k){
+                    Node newNode = new Node(k);
+                    newNode.ptr = first;
+                    first = newNode;
+                    temp = previous = first;
+                    break;
+                }
+            }
             if(temp.num < k){
                 previous = temp;
                 temp = temp.ptr;
